@@ -2,7 +2,7 @@
 
 namespace Examen
 {
-    internal class Asignatura : Alumno ,IAsignatura
+    internal class Asignatura : Alumno , IAsignatura
     {
         public int N1 { get; set; }
         public int N2 { get; set; }
