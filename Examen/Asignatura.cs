@@ -35,13 +35,15 @@ public class Asignatura : Alumno, IAsignatura
     {
         double notaFinal = CalcularNotaFinal();
         Console.WriteLine($"------------DATOS OBTENIDOS------------");
+        Console.WriteLine($"******************************************************");
         Console.WriteLine($"Alumno: {NombreAlumno}");
         Console.WriteLine($"Número de Cuenta: {NumeroCuenta}");
         Console.WriteLine($"Email: {Email}");
         Console.WriteLine($"Asignatura: {NombreAsignatura}");
         Console.WriteLine($"Horario: {Horario}");
         Console.WriteLine($"Docente: {NombreDocente}");
-        Console.WriteLine($"Nota Final (sin parámetros): {notaFinal} - {MensajeNotaFinal(notaFinal)}");
-        Console.WriteLine($"Nota Final (con parámetros): {CalcularNotaFinal(N1, N2, N3)} - {MensajeNotaFinal(CalcularNotaFinal(N1, N2, N3))}");
+        Console.WriteLine($"Nota Final (sin parámetros): {notaFinal} % - {MensajeNotaFinal(notaFinal)} ");
+        Console.WriteLine($"Nota Final (con parámetros): {CalcularNotaFinal(N1, N2, N3)} % - {MensajeNotaFinal(CalcularNotaFinal(N1, N2, N3))}");
+        Console.WriteLine($"******************************************************");
     }
 }
