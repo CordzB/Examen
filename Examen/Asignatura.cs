@@ -34,6 +34,7 @@ public class Asignatura : Alumno, IAsignatura
     public void Imprimir()
     {
         double notaFinal = CalcularNotaFinal();
+        Console.WriteLine($"------------DATOS OBTENIDOS------------");
         Console.WriteLine($"Alumno: {NombreAlumno}");
         Console.WriteLine($"Número de Cuenta: {NumeroCuenta}");
         Console.WriteLine($"Email: {Email}");
